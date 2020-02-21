@@ -8,7 +8,6 @@ def starts_with_a_vowel?(word)
    else
      false
    end
-
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
@@ -34,5 +33,11 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-
+  phone.map do |num_1|
+     num_2 = num_1.split('')
+     num_3 = num_2.grep(/\d/)
+     if num_3.length == 10
+       true
+     end
+    end
 end
