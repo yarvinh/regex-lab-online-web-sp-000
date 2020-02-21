@@ -38,6 +38,8 @@ def valid_phone_number?(phone)
      num_3 = num_2.grep(/\d/)
      if num_3.length == 10
        true
+     else
+       false
      end
     end
 end
