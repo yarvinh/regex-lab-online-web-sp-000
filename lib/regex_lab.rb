@@ -35,7 +35,7 @@ end
 def valid_phone_number?(phone)
   phone.map do |num_1|
      num_2 = num_1.split('')
-     num_3 = num_2.grep(/\d/)
+     num_3 = num_2.grep(/[\d]+.*/)
      if num_3.length == 10
        true
      else
