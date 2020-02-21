@@ -33,14 +33,14 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  phone.each do |num_1|
-     num_2 = num_1.split('')
-     num_3 = num_2.grep(/\d/)
-     if num_3.length == 10
+
+     num_1 = phone.split('')
+     num_2 = num_1.grep(/\d/)
+     if num_2.length == 10
        true
      else
        false
      end
 
-    end
+
 end
